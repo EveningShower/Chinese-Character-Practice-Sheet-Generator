@@ -17,14 +17,21 @@ The script defines a function generate_chinese_character_practice that takes in 
 generate_chinese_character_practice((2100, 2970), (50,50), 100, "chinese_character_practice", "png")
 generate_chinese_character_practice((2100, 2970), (50,50), 100, "chinese_character_practice", "pdf")
 ```
+![chinese_character_practice](https://user-images.githubusercontent.com/83130443/212557046-9b050dd6-50d9-474b-90ee-664d3fe3c849.png)
+
 The above example will generate an A4 paper size with 0.5cm margins, 1cm square size, and save the image in both PNG and PDF formats with the name "chinese_character_practice".
 
 Here is an example of generating a US letter paper size with 0.5cm margins, 1cm square size:
 ```python
 generate_chinese_character_practice((2550, 3300), (50, 50), 100, "chinese_character_practice_usletter", "png")
 ```
+![chinese_character_practice_usletter](https://user-images.githubusercontent.com/83130443/212557123-2d2a98d0-f253-40cb-a50e-a857411082b3.png)
+
 You can also generate a custom paper size with different margins and square sizes:
 ```python
-generate_chinese_character_practice((5000, 7000), (150, 150), 200, "chinese_character_practice_custom", "png")
+generate_chinese_character_practice((5000, 7000), (100, 100), 690, "chinese_character_practice_custom", "png")
 ```
+![chinese_character_practice_custom](https://user-images.githubusercontent.com/83130443/212557242-dc98b323-5643-4f0e-ac9f-5009ddf3487a.png)
+
+
 The script will automatically calculate the number of squares that will fit on the paper, ensuring that the image is symmetric and all squares are of equal size.
