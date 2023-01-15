@@ -27,9 +27,11 @@ def generate_chinese_character_practice(paper_size, margins, square_size, filena
     margins_height = int((paper_height - num_squares_height*square_size)/2)
     
     # Replicate the square image multiple times on the paper
-    for i in range(margins_width, paper_width - margins_width, square_size):
-        for j in range(margins_height, paper_height - margins_height, square_size):
+    for i in range(margins_width, margins_width+num_squares_width*square_size, square_size):
+        for j in range(margins_height, margins_height+num_squares_height*square_size, square_size):
             img.paste(square, (i, j))
 
     # Save the image
     img.save(f'{filename}.{file_format}', dpi=(300,300))
+
+
